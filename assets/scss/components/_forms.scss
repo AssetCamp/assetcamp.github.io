@@ -1,0 +1,12 @@
+.email-input-group {
+    max-width: 350px;
+    text-align: center;
+    input {
+        margin-bottom: 1em;
+    }
+
+    @include media("<medium") {
+        margin: 0 auto;
+    }
+
+}

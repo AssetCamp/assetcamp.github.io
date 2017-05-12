@@ -1,0 +1,31 @@
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 68px;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.container {
+    background-color: $white;
+    padding: 20px 8px;
+
+    @include media(">medium") {
+        padding: 64px;
+    }
+
+    &.container--gray {
+        background-color: $light-gray;
+    }
+}
+
+
+.row {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+

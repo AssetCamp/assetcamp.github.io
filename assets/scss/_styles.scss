@@ -1,0 +1,237 @@
+.heart {
+    &:before {
+        content: url("../images/icon-heart.svg");   
+    }
+}
+
+.customers {
+    width: 150px;
+    display: inline-block;
+    // text-align: left;
+    vertical-align: bottom;
+    border-bottom: 1px solid color(gray, dark);
+    min-height: 21px;
+
+    @include media("<small") {
+        width: 200px;
+        text-align: center;
+    }
+}
+
+.features {
+    padding: 10px 0;
+
+    .features__title {
+        margin-left: 16px;
+        margin-bottom: 0;
+    }
+
+    .features__flag {
+        margin-bottom: 16px;
+    }
+}
+
+.private-alpha-img {
+    max-height: 300px;
+}
+
+.row--step {
+    padding: 16px 0;
+
+    @include media(">medium") {
+        padding: 32px 0;
+    }
+}
+
+.step-one, .step-two {
+    
+   margin-top: 0px;
+   margin-bottom: 28px;
+
+    @include media(">medium") {
+         margin-top: 96px;
+         margin-bottom: 0;
+    }
+}
+
+.pricing {
+    border: 1px solid $black;
+    padding: 16px;
+    max-width: 80%;
+    margin: 0 auto 16px;
+
+    @include media(">medium") {
+        margin: 0 auto;
+    }
+
+    button {
+        margin: 0 auto;
+        display: block;
+    }
+
+    @include media(">medium") {
+        padding: 32px;
+        max-width: 100%;
+    }
+
+    .pricing__title {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .pricing__price {
+        float: right;
+
+        &:before {
+            content: "$";
+            font-size: 16px;
+            vertical-align: top;
+        }
+
+        &:after {
+            content: "/mo";
+            font-size: 16px;
+            vertical-align: bottom;
+        }
+
+        &.pricing__price--instant:after {
+            content: "";
+        }
+    }
+
+    .pricing__radio {
+        padding-top: 2px;
+        p {
+            display: inline;
+        }
+    }
+}
+
+.pricing-table {
+    text-align: center;
+
+    @include media("<medium") {
+        margin-bottom: 48px;
+    }
+
+    thead {
+        text-transform: uppercase;
+    }
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.login-row {
+    padding: 32px 0;
+
+    @include media(">medium") {
+        padding: 64px 0;
+    }
+}
+
+.login {
+    text-align: center;
+    border: 1px solid $gray;
+    border-radius: $base-border-radius;
+
+    .login__input {
+        margin-bottom: 20px;
+    }
+}
+
+.c-btn--contact-us {
+    position: fixed;
+    right: 32px;
+    bottom: 16px;
+    height: 50px;
+    width: 50px;
+    box-shadow: $base-box-shadow;
+    border-radius: 32px;
+    background-color: $blue;
+    border-color: transparent;
+    color: $white;
+    transition: $base-transition;
+
+    @include media(">medium") {
+        width: 200px;
+        padding-left:50px;
+        &:after {
+            content: "Contact Us";
+        }
+    }
+    
+    &:hover {
+        bottom: 14px;
+    }
+
+    &:before {
+        content: " ";
+        background-image: url("../images/icon-email.png");
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        left: 45px;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        top: 12px;
+
+        @include media("<medium") {
+            left: 10px;
+        }
+    }
+}
+
+.contact-form {
+    display: none;
+    position: fixed;
+    right: 32px;
+    bottom: -5px;
+    width:300px;
+    background-color: $white;
+    padding: 22px;
+    border-radius: $base-border-radius;
+    box-shadow: $base-box-shadow;
+
+    @include media("<medium") {
+        width: 90%;
+        right: 5%;
+    }
+
+    .close {
+        cursor: pointer;
+        font-size: 22px;
+        position:absolute;
+        right: 20px;
+        top: 5px;
+    }
+
+    h1 {
+        margin-bottom: 5px;
+    }
+    
+    button {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+    }
+}

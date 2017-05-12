@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bitterz - AssetCamp</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
+  </head>
+  <body>
+    <nav class="navbar">
+    <a href="/"><img class="navbar__logo" src="/assets/img/logo.png" alt="AssetCamp"></a>
+    <ul class="navbar__items">
+        <li ><a href="/login/">Login</a></li>
+    </ul>
+</nav>
+    <main>
+      <code class="u-font-meta">.f-headline (48px)</code>
+<h1 class="f-headline">This is a headline</h1>
+
+<code class="u-font-meta">.f-subhead (36px)</code>
+<h1 class="f-subhead">This is a subheading</h1>
+
+<code class="u-font-meta">.f1 (24px)</code>
+<h1 class="f1">This is a first-level heading</h1>
+
+<code class="u-font-meta">.f2 (20px)</code>
+<h2 class="f2">A second-level heading</h2>
+
+<code class="u-font-meta">.f3 (16px)</code>
+<h3 class="f3">A third-level heading</h3>
+
+<code class="u-font-meta">.f4 (13px)</code>
+<h4 class="f4">A fourth-level heading</h4>
+
+<p>This is a paragraph.</p>
+
+<p>This is a paragraph <a href="#">with a link</a>.</p>
+
+<hr class="c-rule"/>
+
+<section class="grid">
+    <div class="grid__col grid__col--1-of-4 grid__col--m-2-of-4 grid__col--s-1-of-4">
+      A quarer-width column.
+    </div>
+    <div class="grid__col grid__col--1-of-4 grid__col--m-1-of-4 grid__col--s-1-of-4">
+      A quarter-width column.
+    </div>
+    <div class="grid__col grid__col--1-of-3">
+      1/3 column
+    </div>
+    <div class="grid__col grid__col--1-of-6">
+      1/6 column
+    </div>
+    <div class="grid__col grid__col--1-of-6">
+      1/6 column
+    </div>
+    <div class="grid__col grid__col--1-of-12">
+      1/12 column
+    </div>
+    <div class="grid__col grid__col--1-of-12">
+      1/12 column
+    </div>
+    <div class="grid__col grid__col--1-of-12">
+      1/12 column
+    </div>
+</section>
+
+<label class="c-label">
+    Name
+    <input class="c-input" type="text" name="name" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+</label>
+<label class="c-label">
+    Email
+    <input class="c-input" type="email" name="_replyto" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+</label>
+<label class="c-label">
+    Message
+    <textarea class="c-input" name="message"></textarea>
+</label>
+<button class="c-btn c-btn--primary" type="submit">Send</button>
+    </main>
+    <footer class="row u-pad-vertical-m">
+    <p class="f3 u-trim-margin">© 2017 AssetCamp</p>
+</footer>
+
+    <div id="contact-form" class="contact-form">
+      <span class="close">x</span>
+      <h1 class="f3">Contact Us</h1>
+      <p>We'd love to hear your thoughts!</p>
+      <form method="POST" action="http://formspree.io/assetcamp@gmail.com">
+          <label class="c-label">
+              Name
+              <input class="c-input" type="text" name="name" required/>
+          </label>
+          <label class="c-label">
+              Email
+              <input class="c-input" type="email" name="_replyto" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+          </label>
+          <label class="c-label">
+              Message
+              <textarea class="c-input" name="message"></textarea>
+          </label>
+          <button class="c-btn c-btn--primary" type="submit">Send</button>
+      </form>
+    </div>
+
+    <button id="contact-btn" class="c-btn c-btn--contact-us"></button>
+
+    <script src="/assets/js/typed.min.js"></script>
+     <script src="/assets/js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+

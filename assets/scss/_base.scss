@@ -1,0 +1,19 @@
+// import other style sheets
+
+@import "components/settings";
+@import "components/normalize";
+@import "libs/scooter/scooter";
+@import "libs/include-media/include-media";
+
+// importing components
+@import "components/variables";
+@import "components/helpers";
+@import "components/typography";
+@import "components/navbar";
+@import "components/footer";
+@import "components/header";
+@import "components/layout";
+@import "components/forms";
+
+// custom styles
+@import "styles";

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Welcome to Jekyll! - AssetCamp</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
+  </head>
+  <body>
+    <nav class="navbar">
+    <a href="/"><img class="navbar__logo" src="/assets/img/logo.png" alt="AssetCamp"></a>
+    <ul class="navbar__items">
+        <li ><a href="/login/">Login</a></li>
+    </ul>
+</nav>
+    <main>
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Welcome to Jekyll!</h1>
+    <p class="post-meta">
+      <time datetime="2017-04-25T22:54:33-07:00" itemprop="datePublished">
+        
+        Apr 25, 2017
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+
+  </div>
+
+  
+</article>
+
+    </main>
+    <footer class="row u-pad-vertical-m">
+    <p class="f3 u-trim-margin">© 2017 AssetCamp</p>
+</footer>
+
+    <div id="contact-form" class="contact-form">
+      <span class="close">x</span>
+      <h1 class="f3">Contact Us</h1>
+      <p>We'd love to hear your thoughts!</p>
+      <form method="POST" action="http://formspree.io/assetcamp@gmail.com">
+          <label class="c-label">
+              Name
+              <input class="c-input" type="text" name="name" required/>
+          </label>
+          <label class="c-label">
+              Email
+              <input class="c-input" type="email" name="_replyto" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+          </label>
+          <label class="c-label">
+              Message
+              <textarea class="c-input" name="message"></textarea>
+          </label>
+          <button class="c-btn c-btn--primary" type="submit">Send</button>
+      </form>
+    </div>
+
+    <button id="contact-btn" class="c-btn c-btn--contact-us"></button>
+
+    <script src="/assets/js/typed.min.js"></script>
+     <script src="/assets/js/main.js"></script>
+  </body>
+</html>
+
+
+
+
+

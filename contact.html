@@ -1,0 +1,25 @@
+---
+title: Contact Us
+permalink: /contact/
+---
+
+<section class="grid">
+    <div class="grid__col grid__col--8-of-12 grid__col--centered">
+        <h1>Contact Us</h1>
+        <form method="POST" action="http://formspree.io/assetcamp@gmail.com">
+            <label class="c-label">
+                Name
+                <input class="c-input" type="text" name="name" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+            </label>
+            <label class="c-label">
+                Email
+                <input class="c-input" type="email" name="_replyto" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+            </label>
+            <label class="c-label">
+                Message
+                <textarea class="c-input" name="message"></textarea>
+            </label>
+            <button class="c-btn c-btn--primary" type="submit">Send</button>
+        </form>
+    </div>
+</section>

@@ -15,12 +15,12 @@ $base-box-shadow: 0 4px 6px rgba(50,50,93,.33), 0 1px 3px rgba(0,0,0,.24);
 // typography
 @font-face {
     font-family: avenir;
-    src: url(../font/avenirltstd-light.tff) format('truetype');
+    src: url(../font/avenirltstd-light.ttf) format('truetype');
     font-weight: normal;
 }
 @font-face {
     font-family: avenir;
-    src: url(../font/avenirltstd-heavy.tff) format('truetype');
+    src: url(../font/avenirltstd-heavy.ttf) format('truetype');
     font-weight: bold;
 }
 $base-font-color: $black;

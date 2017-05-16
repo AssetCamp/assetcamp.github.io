@@ -1,7 +1,8 @@
 // colors
 $black: color(gray, x-dark);
 $gray: color(gray);
-$light-gray: color(gray, x-light);
+$light-gray: color(gray, light);
+$xlight-gray: color(gray, x-light);
 $blue: color(blue);
 $dark-blue: color(blue, dark);
 $white: color(white);
@@ -12,6 +13,16 @@ $base-transition: all .15s ease;
 $base-box-shadow: 0 4px 6px rgba(50,50,93,.33), 0 1px 3px rgba(0,0,0,.24);
 
 // typography
+@font-face {
+    font-family: avenir;
+    src: url(../font/avenirltstd-light.tff) format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: avenir;
+    src: url(../font/avenirltstd-heavy.tff) format('truetype');
+    font-weight: bold;
+}
 $base-font-color: $black;
 $secondary-font-color: $gray;
 

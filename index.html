@@ -3,28 +3,10 @@
 <header class="hero">
   <h1 class="hero__title f-headline">AssetCamp</h1>
   <h2 class="hero__subtitle f-subhead">Earn Money Doing What You <span class="heart"></span></h2>
-  <p class="hero__caption f3">AssetCamp is a community & subscription marketplace for 3D creators to sell to <span class="customers"></span>.</p>
+  <p class="hero__caption f3">AssetCamp is a community & subscription marketplace for 3D creators to sell to <span class="customers"></span></p>
+  <a href="#signup" class="c-btn c-btn--primary c-btn--big c-btn--arrow">Sign up now</a>
 </header>
 
-<section class="container">
-  <div class="grid row">
-    <div class="grid__col grid__col--1-of-2">
-      <h1 class="f1">Sign up for the creator private alpha</h1>
-      <p>We’re building a product that supports the amateur and professional 3D community. If you’re a 3D artist, we’d love for you to join our family of creators.</p>
-      <div class="email-input-group">
-        <form action="//assetcamp.us15.list-manage.com/subscribe/post?u=f879690f23d0fc555006cca07&amp;id=4dd58fd5b8" method="post" target="_blank">
-          <input class="c-input" type="text" name="FULLNAME" placeholder="Full Name" required/>
-          <input class="c-input" type="email" name="EMAIL" placeholder="Email" required/>
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f879690f23d0fc555006cca07_4dd58fd5b8" tabindex="-1" value=""></div>
-          <input class="c-btn c-btn--primary" type="submit" value="Join Private Alpha">
-        </form>
-      </div>
-    </div>
-    <div class="grid__col grid__col--1-of-2 u-font-center">
-      <img class="private-alpha-img" src="https://unsplash.it/600/400" alt="Creator Private Alpha">
-    </div>
-  </div>
-</section>
 <section class="container container--gray">
   <h1 class="f1 u-font-center u-mar-bottom-l">Features</h1>
   <div class="row grid">
@@ -140,8 +122,8 @@
         </div>
         <div class="f3 pricing__radio clearfix">
           <label>
-            <input type="radio" name="subscription" value="75">
-            75 assets
+            <input type="radio" name="subscription" value="70">
+            70 assets
           </label>
           <span class="pricing__price f2 u-trim-margin">199</span>
         </div>
@@ -180,23 +162,23 @@
         <tbody>
           <tr>
             <td>$0 - $500</td>
-            <td>$0.95</td>
-            <td>$1.50</td>
+            <td>$2.00</td>
+            <td>$3.50</td>
           </tr>
           <tr>
             <td>$500 - $5000</td>
-            <td>$1.20</td>
-            <td>$2.00</td>
+            <td>$2.20</td>
+            <td>$3.70</td>
           </tr>
           <tr>
             <td>$5000 - $10000</td>
-            <td>$1.50</td>
-            <td>$2.20</td>
+            <td>$2.30</td>
+            <td>$3.80</td>
           </tr>
           <tr>
             <td>$10000+</td>
-            <td>$2.00</td>
             <td>$2.50</td>
+            <td>$4.00</td>
           </tr>
         </tbody>
       </table>
@@ -219,7 +201,16 @@
     <div class="grid__col grid__col--1-of-2 grid__col--centered">
       <p class="f3">tldr; We are a small, motivated team who are tired of the existing solutions. We’re trying to build a community and marketplace of happy 3D artists and developers.</p>
       <p class="f3">So what are you waiting for? If you’re a 3D artist, we’d love for you to join our family of creators.</p>
-      <div class="email-input-group u-margin-center u-mar-vertical-xl">
+    </div>
+  </div>
+</section>
+
+<section id="signup" class="container container container--gray">
+  <div class="grid row">
+    <div class="grid__col grid__col--1-of-2">
+      <h1 class="f1">Sign up for the creator private alpha</h1>
+      <p>We’re building a product that supports the amateur and professional 3D community. If you’re a 3D artist, we’d love for you to join our family at the AssetCamp fire.</p>
+      <div class="email-input-group">
         <form action="//assetcamp.us15.list-manage.com/subscribe/post?u=f879690f23d0fc555006cca07&amp;id=4dd58fd5b8" method="post" target="_blank">
           <input class="c-input" type="text" name="FULLNAME" placeholder="Full Name" required/>
           <input class="c-input" type="email" name="EMAIL" placeholder="Email" required/>
@@ -227,6 +218,10 @@
           <input class="c-btn c-btn--primary" type="submit" value="Join Private Alpha">
         </form>
       </div>
+    </div>
+    <div class="grid__col grid__col--1-of-2 u-font-center private-alpha-img">
+      <img class="private-alpha-img__caption" src="{{ "/assets/images/campfire-caption.svg" | relative_url }}" alt="generic campfire stock photo">
+      <img class="private-alpha-img__img" src="{{ "/assets/images/campfire.jpg" | relative_url }}" alt="Campfire">
     </div>
   </div>
 </section>

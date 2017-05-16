@@ -1,0 +1,40 @@
+.c-btn {
+    // border: none;
+    // box-shadow: $base-box-shadow;
+    border-radius: $base-border-radius;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: 400;
+
+    &.c-btn--big {
+        padding: 16px 24px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &.c-btn--arrow {
+
+        &:after {
+            content: " ";
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+            background-repeat: no-repeat;
+            width: 5px;
+            height: 9px;
+            margin-top: -2px;
+            background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="%23fff" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>');
+        }
+
+        &:hover {
+            // &:after {
+            //     -moz-transform: translateX(4px);
+            //     -ms-transform: translateX(4px);
+            //     -webkit-transform: translateX(4px);
+            //     transform: translateX(4px);
+            // }
+        }
+    }
+}

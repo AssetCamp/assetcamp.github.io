@@ -7,10 +7,10 @@
 .customers {
     width: 150px;
     display: inline-block;
-    // text-align: left;
+    text-align: left;
     vertical-align: bottom;
-    border-bottom: 1px solid color(gray, dark);
-    min-height: 21px;
+    // border-bottom: 1px solid color(gray, dark);
+    // min-height: 21px;
 
     @include media("<small") {
         width: 200px;
@@ -32,7 +32,18 @@
 }
 
 .private-alpha-img {
-    max-height: 300px;
+    position: relative;
+
+    .private-alpha-img__caption {
+        position: absolute;
+        right: 50px; 
+        top: -50px;
+        z-index: 1;
+    }
+
+    .private-alpha-img__img {
+        max-height: 300px;
+    }
 }
 
 .row--step {
@@ -55,7 +66,7 @@
 }
 
 .pricing {
-    border: 1px solid $black;
+    border: 1px solid $light-gray;
     padding: 16px;
     max-width: 80%;
     margin: 0 auto 16px;
@@ -109,6 +120,7 @@
 
 .pricing-table {
     text-align: center;
+    border: 1px solid $light-gray;
 
     @include media("<medium") {
         margin-bottom: 48px;
@@ -116,6 +128,13 @@
 
     thead {
         text-transform: uppercase;
+        tr > th {
+            color: $black;
+        }
+    }
+
+    tbody {
+        font-size: 16px;
     }
 }
 
@@ -151,7 +170,7 @@
 
 .login {
     text-align: center;
-    border: 1px solid $gray;
+    border: 1px solid $light-gray;
     border-radius: $base-border-radius;
 
     .login__input {
@@ -171,10 +190,11 @@
     border-color: transparent;
     color: $white;
     transition: $base-transition;
+    font-weight: 600;
 
     @include media(">medium") {
         width: 200px;
-        padding-left:50px;
+        padding-left:55px;
         &:after {
             content: "Contact Us";
         }
@@ -190,13 +210,13 @@
         position: absolute;
         height: 25px;
         width: 25px;
-        left: 45px;
+        left: 40px;
         background-size: 25px;
         background-repeat: no-repeat;
         top: 12px;
 
         @include media("<medium") {
-            left: 10px;
+            left: 12px;
         }
     }
 }

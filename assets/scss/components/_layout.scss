@@ -14,11 +14,11 @@ html {
     padding: 20px 8px;
 
     @include media(">medium") {
-        padding: 64px;
+        padding: 32px;
     }
 
     &.container--gray {
-        background-color: $light-gray;
+        background-color: $xlight-gray;
     }
 }
 

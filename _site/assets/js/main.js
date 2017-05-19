@@ -44,13 +44,24 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     // hides form on submit
-  $('#mc-embedded-subscribe').click(function() {
-    $('#signup-form__inputs').hide();
-    $('.alpha-text').hide();
-    $(this).hide();
-    $('#mce-responses').show(500);
-  });
-    
+    var valid = false;
+    $('#mc-embedded-subscribe').click(function() {
+        $('.required').each(function() {
+            valid = true;
+            if (!$(this).val()) valid = false;
+        });
+
+        if ($('input.mce_inline_error').length > 0) valid = false;
+
+        if (valid) {
+            $('#mc-embedded-subscribe-form').children('')
+            $('#signup-form__inputs').hide();
+            $('.alpha-text').hide();
+            $(this).hide();
+            $('#mce-responses').show(500);
+        }
+    });
+
 
     // Add smooth scrolling to all links
     $(".scroll").on('click', function(event) {

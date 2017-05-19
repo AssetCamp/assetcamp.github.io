@@ -115,10 +115,20 @@
     </div>
   </div>
   <div class="grid row u-pad-vertical-l">
-    <div class="grid__col grid__col--4-of-8">
+    <div class="grid__col grid__col--3-of-8 grid__col--push-5-of-8">
+      <div class="o-flag step-two">
+        <div class="o-flag__fix">
+          <img src="{{ "/assets/images/step-two.svg" | relative_url }}" width="48" alt="Step 2" />
+        </div>
+        <div class="o-flag__flex">
+           <p class="f3">Dollar bills will rain down on you every time your asset is downloaded 🌧️.️</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid__col grid__col--4-of-8 grid__col--pull-8-of-8">
       <table class="pricing-table c-table c-table--zebra">
         <thead>
-          <th>Models Sold</th>
+          <th>Assets Sold</th>
           <th>$$$ <br /> Subscription Download</th>
           <th>$$$ <br /> Instant Download</th>
         </thead>
@@ -129,7 +139,12 @@
             <td>$3.50</td>
           </tr>
           <tr>
-            <td>500 - 5000</td>
+            <td>500 - 1000</td>
+            <td>$2.10</td>
+            <td>$3.60</td>
+          </tr>
+          <tr>
+            <td>1000 - 5000</td>
             <td>$2.20</td>
             <td>$3.70</td>
           </tr>
@@ -145,16 +160,6 @@
           </tr>
         </tbody>
       </table>
-    </div>
-    <div class="grid__col grid__col--3-of-8 grid__col--push-1-of-8">
-      <div class="o-flag step-two">
-        <div class="o-flag__fix">
-          <img src="{{ "/assets/images/step-two.svg" | relative_url }}" width="48" alt="Step 2" />
-        </div>
-        <div class="o-flag__flex">
-           <p class="f3">Dollar bills will rain down on you every time your asset is downloaded 🌧️.️</p>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -173,17 +178,17 @@
           <div class="grid" id="signup-form__inputs">
             <div class="grid__col grid__col--1-of-2">
               <div class="mc-field-group">
-                <input type="text" value="" name="FIRSTNAME" class="required c-input  c-input--primary" id="mce-FIRSTNAME" placeholder="First name">
+                <input type="text" value="" name="FIRSTNAME" class="required c-input c-input--primary" id="mce-FIRSTNAME" placeholder="First name">
               </div>
             </div>
             <div class="grid__col grid__col--1-of-2">
               <div class="mc-field-group">
-                <input type="text" value="" name="LASTNAME" class="required c-input  c-input--primary" id="mce-LASTNAME" placeholder="Last name">
+                <input type="text" value="" name="LASTNAME" class="required c-input c-input--primary" id="mce-LASTNAME" placeholder="Last name">
               </div>
             </div>
             <div class="grid__col grid__col--2-of-2">
               <div class="mc-field-group">
-                <input type="email" value="" name="EMAIL" class="required email c-input  c-input--primary" id="mce-EMAIL" placeholder="Email">
+                <input type="email" value="" name="EMAIL" class="required email c-input c-input--primary" id="mce-EMAIL" placeholder="Email">
               </div>
             </div>
           </div>   

@@ -178,6 +178,7 @@
     text-align: center;
     border: 1px solid $light-gray;
     border-radius: $base-border-radius;
+    background: #fff;
 
     .login__input {
         margin-bottom: 20px;
@@ -216,5 +217,19 @@
         display: block;
         margin: 0 auto;
         width: 100px;
+    }
+}
+
+.raindrop {
+    &:before {
+        content: " ";
+        background-image: url(../images/icon-raindrop.svg);
+        background-size: 18px;
+        background-repeat: no-repeat;
+        height: 18px;
+        width: 18px;
+        position: absolute;
+        bottom: 2px;
+        left: 2px;
     }
 }

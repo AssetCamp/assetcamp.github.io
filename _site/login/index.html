@@ -16,33 +16,36 @@
     </ul>
 </nav>
     <main>
-      <header class="hero hero--small">
-  <h1 class="hero__title f-headline">AssetCamp</h1>
-  <h2 class="hero__subtitle f-subhead">Earn Money Doing What You <span class="heart"></span></h2>
+      <header class="hero">
+  
+  <h2 class="hero__title f-headline">Earn Money Doing What You <span class="heart"></span></h2>
+  <p class="hero__caption f2">AssetCamp is a community & subscription marketplace for 3D creators to sell to <span class="customers"></span></p>
 </header>
 
-<section class="grid row login-row">
-    <div class="grid__col grid__col--2-of-5">
-        <article class="login u-pad-l u-mar-bottom-m">
-            <h1 class="f1">Sign Up</h1>
-            <p class="u-font-error error-signup"></p>
-            <form id="signup-form" method="POST" action="/signup/">
-                <input class="login__input c-input" type="email" name="email" placeholder="Email" required/>
-                <input class="login__input c-input" type="text" name="invite_code" placeholder="Invite Code" required/>
-                <button class="c-btn c-btn--primary" type="submit">Sign Up</button>
-            </form>
-        </article>
-    </div>
-    <div class="grid__col grid__col--2-of-5 grid__col--push-1-of-5">
-        <article class="login u-pad-l">
-            <h1 class="f1">Login</h1>
-            <p class="u-font-error error-login"></p>
-            <form id="login-form" method="POST" action="/login/">
-                <input class="login__input c-input" type="email" name="email" placeholder="Email" required/>
-                <input class="login__input c-input" type="password" name="password" placeholder="Password" required/>
-                <button class="c-btn c-btn--primary" type="submit">Login</button>
-            </form>
-        </article>
+<section class="container container--gray">
+    <div class="grid row login-row">
+        <div class="grid__col grid__col--2-of-5">
+            <article class="login u-pad-l u-mar-bottom-m">
+                <h1 class="f1">Sign Up</h1>
+                <p class="u-font-error error-signup"></p>
+                <form id="signup-form" method="POST" action="/signup/">
+                    <input class="login__input c-input" type="email" name="email" placeholder="Email" required/>
+                    <input class="login__input c-input" type="text" name="invite_code" placeholder="Invite Code" required/>
+                    <button class="btn btn--primary" type="submit">Sign Up</button>
+                </form>
+            </article>
+        </div>
+        <div class="grid__col grid__col--2-of-5 grid__col--push-1-of-5">
+            <article class="login u-pad-l">
+                <h1 class="f1">Login</h1>
+                <p class="u-font-error error-login"></p>
+                <form id="login-form" method="POST" action="/login/">
+                    <input class="login__input c-input" type="email" name="email" placeholder="Email" required/>
+                    <input class="login__input c-input" type="password" name="password" placeholder="Password" required/>
+                    <button class="btn btn--primary" type="submit">Login</button>
+                </form>
+            </article>
+        </div>
     </div>
 </section>
     </main>

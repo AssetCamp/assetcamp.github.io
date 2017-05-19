@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
     Typed.new('.customers', {
-        strings: ["Game Developers.", "VR Developers.", "3D artists.", "AR Developers.", "Animators."],
+        strings: ["Game Developers.", "VR Developers.", "other 3D artists.", "AR Developers.", "Animators."],
         typeSpeed: 20,
         loop: true,
         backDelay: 1500,
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // hides form on submit
   $('#mc-embedded-subscribe').click(function() {
     $('#signup-form__inputs').hide();
-    $('#alpha-text').hide();
+    $('.alpha-text').hide();
     $(this).hide();
     $('#mce-responses').show(500);
   });

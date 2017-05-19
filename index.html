@@ -1,91 +1,54 @@
 ---
 ---
 <header class="hero">
-  <h1 class="hero__title f-headline">AssetCamp</h1>
-  <h2 class="hero__subtitle f-subhead">Earn Money Doing What You <span class="heart"></span></h2>
-  <p class="hero__caption f3">AssetCamp is a community & subscription marketplace for 3D creators to sell to <span class="customers"></span></p>
-  <a href="#signup" class="c-btn c-btn--primary c-btn--big c-btn--arrow">Sign up now</a>
+  {% comment %}<h1 class="hero__title f-headline">AssetCamp</h1>{% endcomment %}
+  <h2 class="hero__title f-headline">Earn Money Doing What You <span class="heart"></span></h2>
+  <p class="hero__caption f2">AssetCamp is a community & subscription marketplace for 3D creators to sell to <span class="customers"></span></p>
+  <a href="#signup" class="btn btn--primary btn--big btn--arrow scroll">Join the family</a>
 </header>
 
 <section class="container container--gray">
-  <h1 class="f1 u-font-center u-mar-bottom-l">Features</h1>
   <div class="row grid">
     <div class="grid__col grid__col--2-of-5">
       <div class="features">
-        <div class="o-flag features__flag">
-          <div class="o-flag__fix">
-            <img src="{{ "/assets/images/icon-infinity.png" | relative_url }}" width="48" alt="Free Uploads" />
-          </div>
-          <div class="o-flag__flex">
-            <h2 class="f2 features__title">Unlimited Free Uploads</h2>
-          </div>
-        </div>
-        <p>It’s free to be a creator on AssetCamp. We’re trying to build a massive library of 3D content and we need your help.</p>
+        <img class="features__icon" src="{{ "/assets/images/icon-infinity.svg" | relative_url }}" width="32" alt="Free Uploads" />
+        <h2 class="f2 features__title">Unlimited Free Uploads</h2>
+        <p>It’s free to be a creator on AssetCamp. We’re building a massive library of 3D content for creators and want you to help make it happen.</p>
       </div>
     </div>
     <div class="grid__col grid__col--2-of-5 grid__col--push-1-of-5">
       <div class="features">
-        <div class="o-flag features__flag">
-          <div class="o-flag__fix">
-            <img src="{{ "/assets/images/icon-every-two-weeks.png" | relative_url }}" width="48" alt="Paid Every Two Weeks" />
-          </div>
-          <div class="o-flag__flex">
-            <h2 class="f2 features__title">Get Paid Every Two Weeks</h2>
-          </div>
-        </div>  
-        <p>The current solutions have slow and frustrating payout cycles. We’ll pay you on Paypal every two weeks.</p>
+        <img class="features__icon" src="{{ "/assets/images/icon-payouts.svg" | relative_url }}" width="32" alt="Payouts" />
+        <h2 class="f2 features__title">Fast Payouts</h2>  
+        <p>Other asset marketplaces have slow and frustrating payout cycles. We’ll pay you on PayPal every two weeks.</p>
       </div>
     </div>
     <div class="grid__col grid__col--2-of-5">
       <div class="features">
-        <div class="o-flag features__flag">
-          <div class="o-flag__fix">
-            <img src="{{ "/assets/images/icon-community.png" | relative_url }}" width="48" alt="Community" />
-          </div>
-          <div class="o-flag__flex">
-            <h2 class="f2 features__title">Awesome Community Support & Feedback</h2>
-          </div>
-        </div>
-        <p>We’re here to make sure that you’re having a great experience. Moreover, we’re trying to build a product with a great feedback cycle so that you can take your skills to the next level.</p>
+        <img class="features__icon" src="{{ "/assets/images/icon-community.svg" | relative_url }}" width="32" alt="Community" />
+        <h2 class="f2 features__title">Awesome Community Support</h2>
+        <p>We're here to make sure that you’re having a great experience. We’re building a product with a great feedback cycle so that you can take your skills to the next level.</p>
       </div>
     </div>
     <div class="grid__col grid__col--2-of-5 grid__col--push-1-of-5">
       <div class="features">
-        <div class="o-flag features__flag">
-          <div class="o-flag__fix">
-            <img src="{{ "/assets/images/icon-nonexclusive.png" | relative_url }}" width="48" alt="Non-Exclusive" />
-          </div>
-          <div class="o-flag__flex">
-            <h2 class="f2 features__title">Non-Exclusive</h2>
-          </div>
-        </div>
-        <p>Feel free to post your content wherever you want. We’re not here to tell you what to do and what not to do, unlike some other people ;)</p>
+        <img class="features__icon" src="{{ "/assets/images/icon-nonexclusive.svg" | relative_url }}" width="32" alt="Non-Exclusive" />
+        <h2 class="f2 features__title">Non-Exclusive</h2>
+        <p>Feel free to post your content wherever else you want. We’re not here to tell you what to do and what not to do (unlike some alternatives…).</p>
       </div>
     </div>
     <div class="grid__col grid__col--2-of-5">
       <div class="features">
-        <div class="o-flag features__flag">
-          <div class="o-flag__fix">
-            <img src="{{ "/assets/images/icon-royalty-free.png" | relative_url }}" width="48" alt="Royalty Free License" />
-          </div>
-          <div class="o-flag__flex">
-            <h2 class="f2 features__title">Royalty Free License</h2>
-          </div>
-        </div>
-        <p>The standard license for 3D content on the internet. The royalty-free license applies to the use of the exact 3D content as submitted by the artist.</p>
+        <img class="features__icon" src="{{ "/assets/images/icon-royalty-free.svg" | relative_url }}" width="32" alt="Royalty Free License" />
+        <h2 class="f2 features__title">Royalty Free License</h2>
+        <p>All assets are sold with the standard royalty-free license for 3D content on the internet.</p>
       </div>
     </div>
     <div class="grid__col grid__col--2-of-5 grid__col--push-1-of-5">
       <div class="features">
-        <div class="o-flag features__flag">
-          <div class="o-flag__fix">
-            <img src="{{ "/assets/images/icon-focus.png" | relative_url }}" width="48" alt="Focus on .fbx format" />
-          </div>
-          <div class="o-flag__flex">
-            <h2 class="f2 features__title">Focus on .fbx format</h2>
-          </div>
-        </div>
-        <p>Most sites are very confusing for users because of the several dozen file formats. We think that the .fbx format is extremely versatile as it can be used in almost every application.</p>
+        <img class="features__icon" src="{{ "/assets/images/icon-fbx.svg" | relative_url }}" width="32" alt="Focus on .fbx format" />
+        <h2 class="f2 features__title">Focus on .fbx format</h2>
+        <p>Other websites are confusing for new users due to the variety of file formats offered. We think that the .fbx format is extremely versatile as it can be used in nearly all applications.</p>
       </div>
     </div>
   </div>
@@ -127,7 +90,7 @@
           </label>
           <span class="pricing__price f2 u-trim-margin">199</span>
         </div>
-        <button class="c-btn c-btn--tertiary" type="submit" disabled>Coming soon...</button>
+        <button class="btn btn--primary--outline" type="submit" disabled>Coming soon...</button>
       </article>
     </div>
     <div class="grid__col grid__col--2-of-8 grid__col--m-1-of-2">
@@ -147,7 +110,7 @@
           </label>
           <span class="pricing__price pricing__price--instant f2 u-trim-margin">35</span>
         </div>
-        <button class="c-btn c-btn--tertiary" type="submit" disabled>Coming soon...</button>
+        <button class="btn btn--primary--outline" type="submit" disabled>Coming soon...</button>
       </article>
     </div>
   </div>
@@ -195,33 +158,45 @@
     </div>
   </div>
 </section>
-<section class="container container--gray">
-  <h1 class="f1 u-font-center u-mar-bottom-l"><u>Our Manifesto</u></h1>
-  <div class="grid row">
-    <div class="grid__col grid__col--1-of-2 grid__col--centered">
-      <p class="f3">tldr; We are a small, motivated team who are tired of the existing solutions. We’re trying to build a community and marketplace of happy 3D artists and developers.</p>
-      <p class="f3">So what are you waiting for? If you’re a 3D artist, we’d love for you to join our family of creators.</p>
-    </div>
-  </div>
-</section>
 
 <section id="signup" class="container container container--gray">
   <div class="grid row">
     <div class="grid__col grid__col--1-of-2">
       <h1 class="f1">Sign up for the creator private alpha</h1>
-      <p>We’re building a product that supports the amateur and professional 3D community. If you’re a 3D artist, we’d love for you to join our family at the AssetCamp fire.</p>
-      <div class="email-input-group">
-        <form action="//assetcamp.us15.list-manage.com/subscribe/post?u=f879690f23d0fc555006cca07&amp;id=4dd58fd5b8" method="post" target="_blank">
-          <input class="c-input" type="text" name="FULLNAME" placeholder="Full Name" required/>
-          <input class="c-input" type="email" name="EMAIL" placeholder="Email" required/>
+      <p id="alpha-text">We’re building a product that supports the amateur and professional 3D community. If you’re a 3D creator, we’d love for you to join our family at the AssetCamp fire.</p>
+      <!-- Begin MailChimp Signup Form -->
+      <div id="signup">
+        <form action="//assetcamp.us15.list-manage.com/subscribe/post?u=f879690f23d0fc555006cca07&amp;id=4dd58fd5b8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="signup-form validate" target="_blank" novalidate>
+          <div class="grid" id="signup-form__inputs">
+            <div class="grid__col grid__col--1-of-2">
+              <div class="mc-field-group">
+                <input type="text" value="" name="FIRSTNAME" class="required c-input  c-input--primary" id="mce-FIRSTNAME" placeholder="First name">
+              </div>
+            </div>
+            <div class="grid__col grid__col--1-of-2">
+              <div class="mc-field-group">
+                <input type="text" value="" name="LASTNAME" class="required c-input  c-input--primary" id="mce-LASTNAME" placeholder="Last name">
+              </div>
+            </div>
+            <div class="grid__col grid__col--2-of-2">
+              <div class="mc-field-group">
+                <input type="email" value="" name="EMAIL" class="required email c-input  c-input--primary" id="mce-EMAIL" placeholder="Email">
+              </div>
+            </div>
+          </div>   
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f879690f23d0fc555006cca07_4dd58fd5b8" tabindex="-1" value=""></div>
-          <input class="c-btn c-btn--primary" type="submit" value="Join Private Alpha">
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--primary btn--full-width"></div>
         </form>
       </div>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FULLNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+      <!--End mc_embed_signup-->
     </div>
     <div class="grid__col grid__col--1-of-2 u-font-center private-alpha-img">
-      <img class="private-alpha-img__caption" src="{{ "/assets/images/campfire-caption.svg" | relative_url }}" alt="generic campfire stock photo">
-      <img class="private-alpha-img__img" src="{{ "/assets/images/campfire.jpg" | relative_url }}" alt="Campfire">
+      <img class="private-alpha-img__img" src="{{ "/assets/images/signup-illo.svg" | relative_url }}" alt="Signup">
     </div>
   </div>
 </section>

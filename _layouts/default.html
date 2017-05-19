@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="shortcut icon" type="image/png" href="{{ "/assets/images/favicon.ico" | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}" type="text/css">
   </head>
   <body>
@@ -31,12 +32,16 @@
               Message
               <textarea class="c-input" name="message"></textarea>
           </label>
-          <button class="c-btn c-btn--primary" type="submit">Send</button>
+          <button class="btn btn--primary" type="submit">Send</button>
       </form>
     </div>
 
-    <button id="contact-btn" class="c-btn c-btn--contact-us"></button>
+    <button id="contact-btn" class="btn btn--primary btn--contact-us"></button>
 
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
     <script src="{{ "/assets/js/typed.min.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
 

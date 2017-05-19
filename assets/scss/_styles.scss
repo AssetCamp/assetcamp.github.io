@@ -5,7 +5,7 @@
 }
 
 .customers {
-    width: 150px;
+    width: 180px;
     display: inline-block;
     text-align: left;
     vertical-align: bottom;
@@ -21,9 +21,14 @@
 .features {
     padding: 10px 0;
 
+    .features__icon {
+        width: 32px;
+        margin-bottom: 1em;
+    }
+
     .features__title {
-        margin-left: 16px;
-        margin-bottom: 0;
+        font-weight: 800;
+        margin-bottom: .5em
     }
 
     .features__flag {
@@ -43,6 +48,7 @@
 
     .private-alpha-img__img {
         max-height: 300px;
+        margin-top: 32px;
     }
 }
 
@@ -175,49 +181,6 @@
 
     .login__input {
         margin-bottom: 20px;
-    }
-}
-
-.c-btn--contact-us {
-    position: fixed;
-    right: 32px;
-    bottom: 16px;
-    height: 50px;
-    width: 50px;
-    box-shadow: $base-box-shadow;
-    border-radius: 32px;
-    background-color: $blue;
-    border-color: transparent;
-    color: $white;
-    transition: $base-transition;
-    font-weight: 600;
-
-    @include media(">medium") {
-        width: 200px;
-        padding-left:55px;
-        &:after {
-            content: "Contact Us";
-        }
-    }
-    
-    &:hover {
-        bottom: 14px;
-    }
-
-    &:before {
-        content: " ";
-        background-image: url("../images/icon-email.png");
-        position: absolute;
-        height: 25px;
-        width: 25px;
-        left: 40px;
-        background-size: 25px;
-        background-repeat: no-repeat;
-        top: 12px;
-
-        @include media("<medium") {
-            left: 12px;
-        }
     }
 }
 

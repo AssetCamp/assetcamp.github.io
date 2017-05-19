@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="25px" viewBox="0 0 30 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Money</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="8" width="30" height="17" rx="3"></rect>
+        <rect id="path-2" x="0" y="0" width="30" height="23" rx="3"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing" transform="translate(-600.000000, -590.000000)">
+            <g id="Money" transform="translate(600.000000, 590.000000)">
+                <g id="Rectangle-17-Copy">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#8BDFBA" stroke-width="2" x="1" y="9" width="28" height="15" rx="3"></rect>
+                </g>
+                <g id="Rectangle-17">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <rect stroke="#24CC82" stroke-width="2" x="1" y="1" width="28" height="21" rx="3"></rect>
+                </g>
+                <rect id="Rectangle-18" fill="#24CC82" x="1" y="4" width="28" height="5"></rect>
+                <rect id="Rectangle-19" fill="#8BDFBA" x="4" y="12" width="17" height="2" rx="1"></rect>
+                <rect id="Rectangle-19-Copy" fill="#8BDFBA" x="4" y="16" width="7" height="2" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

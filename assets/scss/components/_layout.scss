@@ -11,10 +11,10 @@ html {
 
 .container {
     background-color: $white;
-    padding: 20px 8px;
+    padding: 64px 8px;
 
     @include media(">medium") {
-        padding: 32px;
+        padding: 72px 32px;
     }
 
     &.container--gray {

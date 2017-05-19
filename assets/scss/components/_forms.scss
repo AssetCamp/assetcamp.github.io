@@ -1,12 +1,39 @@
-.email-input-group {
-    max-width: 350px;
-    text-align: center;
-    input {
-        margin-bottom: 1em;
-    }
+.signup-form {
+    max-width: 400px;
 
     @include media("<medium") {
         margin: 0 auto;
     }
 
+    .c-input {
+        // margin-bottom: 16px;
+    }
+
+    .mc-field-group {
+        margin-bottom: 16px;
+
+        input.mce_inline_error {
+            border-color: $red;
+        }
+
+        div.mce_inline_error {
+            color: $red;
+            font-size: 70%;
+        }
+    }
+
+    #mce-responses {
+        display: none;
+        #mce-error-response {
+            color: $red;
+        }
+    }
+}
+
+.c-input {
+    &.c-input--primary {
+        &:focus {
+            border-color: $light-green;
+        }
+    }
 }

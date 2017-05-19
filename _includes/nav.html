@@ -1,6 +1,6 @@
-<nav class="navbar">
-    <a href="{{ site.baseurl }}{% link index.html %}"><img class="navbar__logo" src="{{ "/assets/img/logo.png" | relative_url }}" alt="AssetCamp"></a>
+<nav class="navbar row">
+    <a href="{{ site.baseurl }}{% link index.html %}"><img class="navbar__logo" src="{{ "/assets/images/assetcamp.png" | relative_url }}" alt="AssetCamp"></a>
     <ul class="navbar__items">
-        <li {% if page.url == '/login/' %}class="active"{% endif %}><a href="{{ site.baseurl }}{% link login.html %}">Login</a></li>
+        <li {% if page.url == '/login/' %}class="active"{% endif %}><a href="{{ site.baseurl }}{% link login.html %}">Sign in</a></li>
     </ul>
 </nav>

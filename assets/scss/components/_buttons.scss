@@ -1,3 +1,106 @@
+.btn {
+    border-radius: $base-border-radius;
+    line-height: 1.4;
+    display: inline-block;
+    padding: 8px 16px;
+    color: $white;
+    transition: $base-transition;
+    border: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.btn--primary {
+        background: $green;
+    }
+
+    &.btn--full-width {
+        width: 100%;
+    }
+    
+    &.btn--big {
+        padding: 18px 48px;
+    }
+
+    &.btn--arrow {
+        &:after {
+            transition: $base-transition;
+            content: " ";
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+            background-repeat: no-repeat;
+            width: 5px;
+            height: 9px;
+            margin-top: -2px;
+            background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="%23fff" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>');
+        }
+
+        &:hover {
+            &:after {
+                -moz-transform: translateX(6px);
+                -ms-transform: translateX(6px);
+                -webkit-transform: translateX(6px);
+                transform: translateX(6px);
+            }
+        }
+    }
+
+    &.btn[disabled], &.btn--disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+
+    &.btn--primary--outline {
+        color: $green;
+        border: 1px solid $green;
+        background: $white;
+    }
+
+    &.btn--contact-us {
+        position: fixed;
+        right: 32px;
+        bottom: 16px;
+        height: 50px;
+        width: 50px;
+        box-shadow: $base-box-shadow;
+        border-radius: 32px;
+        border-color: transparent;
+        color: $white;
+        transition: $base-transition;
+
+        @include media(">medium") {
+            width: 200px;
+            padding-left:55px;
+            &:after {
+                content: "Contact Us";
+            }
+        }
+        
+        &:hover {
+            bottom: 14px;
+        }
+
+        &:before {
+            content: " ";
+            background-image: url("../images/icon-email.png");
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            left: 40px;
+            background-size: 25px;
+            background-repeat: no-repeat;
+            top: 12px;
+
+            @include media("<medium") {
+                left: 12px;
+            }
+        }
+    }
+}
+
 .c-btn {
     // border: none;
     // box-shadow: $base-box-shadow;

@@ -11,6 +11,10 @@
         text-decoration: none;
     }
 
+    &:focus {
+        outline: -webkit-focus-ring-color auto 5px;
+    }
+    
     &.btn--primary {
         background: $green;
     }
